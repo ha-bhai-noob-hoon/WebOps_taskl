@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+    <title>Alcheringa</title>
+    <style>
+        .head01{
+            display: inline-block;
+            font-weight: bold;
+            width: 480px;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+        .head02{
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            width: 499px;
+        }
+        .search{
+            padding-left: 15px;
+            height:30px;
+            width:290px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: rgb(197, 191, 191);
+            border-style: solid;
+            font-size: 15px;
+            margin-left: 80px;
+        }
+        .head03{
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
+            width: 499px;
+            
+        }
+        .home{display: inline-block;width: 320px;text-align: right;cursor: pointer;}
+        .about{display: inline-block;width: 80px;text-align: center;cursor: pointer;}
+        .contact{
+            display: inline-block;
+            width: 90px;
+            cursor: pointer;
+        }
+        .home:active{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .about:active{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .contact:active{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .lorem{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 50px;
+        }
+        .ipsum{
+            color: blue;
+        }
+        .para01{
+            text-align: center;
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 23px;
+            color: rgb(118, 117, 117);
+        }
+        .b1{
+            display: inline-block;
+            width: 750px;
+            
+        }
+        .b2{
+            display: inline-block;
+            width:600px
+        }
+        .button2{
+            color: blue;
+            background-color: white;
+            border: none;
+            box-shadow: 0 0 2px rgba(0,0,0,0.4);
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+        .button1{
+            color: white;
+            background-color: rgb(78, 78, 240);
+            border: none;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            margin-left: 602px;
+            cursor: pointer;
+            transition: 0.15s;
+        }
+        .button1:hover{
+            background-color: rgb(18, 18, 151);
+        }
+        .button2:hover{
+            background-color: rgb(239, 233, 233);
+        }
+        .l1{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 5px;
+        }
+        .l2{
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 5px;
+        }
+        .l3{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 5px;
+        }
+        .h{
+            background-color: yellow;
+            line-height: 0px;
+            
+        }
+        .l4{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 0px;
+        }
+        .l6{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 0px;
+        }
+        .l5{
+            text-decoration: line-through;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 5px;
+        }
+        .html{
+            margin-left: 60px;
+            display: inline-block;
+            font-size: larger;
+            width: 330px;
+            margin-top: 0px;
+            vertical-align: top;
+        }
+        table,th,td{
+            border:1px solid rgb(198, 195, 195);
+            border-collapse: collapse;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 4px;
+            padding-right: 2px;
+            text-align: left;
+            margin-top: 7px;
+            font-size: large;
+    
+        }
+    
+        .l7{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 5px;
+            margin-bottom: 0;
+        }
+        .frame{
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 0px;
+            margin-left: 90px;
+        }
+        .pq{
+            margin-bottom: 20px;
+        }
+        .fs{
+            font-size: large;
+            margin-top: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .image{
+            display: inline-block;
+            margin-left: 90px;
+            vertical-align: top;
+            margin-top: 22px;
+        }
+        .ani{
+            width: 450px;
+            cursor: pointer;
+    
+        }
+        .ag{
+            cursor:pointer;
+        }
+        .fb{
+           margin-left:660px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        .yt{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ig{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+    </style>
+
+<script>
+    //change text on button1 click
+    function change_text1(){
+        document.getElementById("changetext").innerHTML = "You've clicked Button-1";
+    }
+
+    function change_text2(){
+        document.getElementById("changetext").innerHTML = "You've clicked Button-2";
+    }
+    
+</script>
+
+
+</head>
+<body>
+    <div class="head01">
+        <p class="alcher">
+            Alcheringa WebOps
+        </p>
+    </div>
+    <div class="head02">
+        <input class="search" type="text" placeholder="Search something here">
+    </div>
+    <div class="head03">
+        <p class="home">Home</p>
+        <p class="about">About</p>
+        <p class="contact">Contact</p>
+    </div>
+    <hr style="border-color:rgb(219, 214, 214); border-style:solid; border-width:1px">
+    
+    <p id = "changetext" class="lorem">
+        Lorem Ipsum Dolor <span class="ipsum">Lorem Ipsum</span>
+    </p>
+    <p class="para01">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac eleifend sapien. In ac arcu nec diam tincidunt cursus. Pellentesque quis tortor sit amet erat condimentum molestie ut nec sapien.
+    </p>
+    <div class="pq">
+    <div class="b1">
+        <button onclick = "change_text1()" id = "button1" class="button1">Button 1</button>
+    </div>
+    <div class="b2">
+        <button onclick = "change_text2()" id = "button2" class="button2">Button 2</button>
+    </div>
+    </div>
+    <div>
+    <div class="html">
+        <p class="l1">
+            HTML Formatting:
+        </p>
+        <p class="l2">
+            This is an italic text
+        </p>
+        <p class="l6">
+            This text is <span class="h">highlighted</span>
+        </p>
+        <p class="l3">
+            This is a <sub>subscript</sub> and a <sup>superscript</sup>
+        </p>
+        <p class="l4">
+            "This is a quotation"
+        </p>
+        <p class="l5">
+            This is done using del tag
+        </p>
+        <p class="l7">HTML Table</p>
+        <table class="table" style="width:100%">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+        </table>
+    </div>
+    <div class="frame">
+        <p class="fs">HTML Iframes</p>
+        <iframe class="ag" width="350px" height="200px" src="https://www.alcheringa.in/"></iframe>
+    </div>
+    <div class="image">
+        <img class="ani" src="55-557580_8k-hd-wallpapers-backgrounds-images-high-resolution-beautiful (1).jpg">
+    </div>
+    </div>
+    </br>
+    </br>
+    </br>
+    <a target="_blank" href="https://www.facebook.com/alcheringaiitg/photos/alcheringa-proudly-announces-the-news-mill-as-the-digital-media-partneralchering/3824108330960311/" class="fb">Facebook |</a>
+    <a target="_blank" href="https://www.instagram.com/alcheringaiitg/?hl=en" class="ig">Instagram |</a>
+    <a target="_blank" href="https://www.youtube.com/c/AlcheringaIITG" class="yt">Youtube</a>
+</body>
+
+
+
+
